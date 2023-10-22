@@ -93,3 +93,17 @@ console.log("Results: ",innerArray);
 console.log("Original array: ",whereIsWaldo);
 const waldo = whereIsWaldo[2][1][1];
 console.log(waldo);
+////////////////////////////////
+// Excited Kitten
+////////////////////////////////
+for(let i=0;i<20;i++){
+    console.log("Love me, pet me! HSSSSSS!")
+}
+for(let i=0;i<20;i++){
+    console.log("Love me, pet me! HSSSSSS!");
+    if(i%2===0){
+        const randomIndex=Math.floor(Math.random()*3);
+        const quotes=["...human... why you taking pictures of me...?","...the catnip made me do it...","...why does the red dot always get away...?"];
+        console.log(quotes[randomIndex]);
+    }
+}
