@@ -73,3 +73,23 @@ console.log("ORiginal array: ",favMovies);//doesnt change the original array
 const findFandF = favMovies.indexOf('Fast and Furious');
 console.log(findFandF);
 console.log(favMovies.indexOf('Django Unchained'));//returns -1 if the result is not found
+////////////////////////////////
+// Where is Waldo
+////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]];
+const indexToRemove = whereIsWaldo.indexOf("Eggbert");
+if (indexToRemove !== -1) {
+  whereIsWaldo.splice(indexToRemove, 1);
+}
+console.log("Original array: ",whereIsWaldo);
+const innerArray = whereIsWaldo[1];
+const indexToUpdate = innerArray.indexOf("Neff");
+if (indexToUpdate !== -1) {
+  innerArray[indexToUpdate] = "No One";
+}
+console.log("Results: ",innerArray);
+console.log("Original array: ",whereIsWaldo);
+const waldo = whereIsWaldo[2][1][1];
+console.log(waldo);
