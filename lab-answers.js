@@ -46,3 +46,30 @@ const ninjaturtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 for(const ninjaturtle of ninjaturtles){
 console.log(ninjaturtle.toUpperCase());
 }
+////////////////////////////////
+// Methods, Revisited
+////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+console.log(favMovies.indexOf('Titanic'));
+console.log(favMovies.sort());
+//console.log(favMovies);
+console.log(favMovies.pop());
+favMovies.push("Guardians of the Galaxy");
+const reversedFavMovies = favMovies.reverse();
+console.log(reversedFavMovies);
+const removedMovie = favMovies.shift();
+console.log("Removed movie: ",removedMovie);
+console.log("Updated Arrya: ",favMovies);
+const unshiftMovie = favMovies.unshift();
+console.log("After unshift: ",unshiftMovie);
+console.log("Original array after unshift: ",favMovies);
+const movRemove = favMovies.indexOf('Django Unchained');
+favMovies.splice(movRemove, 1, 'Avatar');
+console.log("After splice: ",favMovies );
+const midValue = favMovies.length/2;
+const lastHalf = favMovies.slice(midValue);
+console.log("last Half of the array: ",lastHalf);
+console.log("ORiginal array: ",favMovies);//doesnt change the original array 
+const findFandF = favMovies.indexOf('Fast and Furious');
+console.log(findFandF);
+console.log(favMovies.indexOf('Django Unchained'));//returns -1 if the result is not found
