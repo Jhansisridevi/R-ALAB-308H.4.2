@@ -149,5 +149,12 @@ const kristynsCloset = [
   const kristynsShoe = kristynsCloset.shift();
   thomsCloset[2].push(kristynsShoe);
 
-console.log(kristynsCloset); // Kristyn's closet without the shoe
+console.log("Without left shoe: ",kristynsCloset); 
 console.log(thomsCloset);
+
+
+const outfit = [];
+function selectRandom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
